@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- main css -->
@@ -16,7 +22,7 @@
 
     <!-- font awesome -->
     <link rel="stylesheet" href="css/all.css" />
-    <title>App for Wheather</title>
+    <title>App for Weather</title>
     <style></style>
   </head>
 
@@ -24,19 +30,17 @@
     <div class="container">
       <div class="row">
         <div class="col mt-5 col-md-8 mx-auto">
-          <div class="feedback alert alert-danger text-capitalize text-center">
-            </div>
           <div class="card card-body border-primary ">
             <div class="card-title text-center text-capitalize">
-              <h3>search city</h3>
+              <h2 class="cardHead">city weather</h2>
             </div>
-            <form id="wheatherForm">
+            <form id="weatherForm">
               <div class="input-group rounded">
                 <input
                   type="text"
                   class="form-control text-capitalize cityInput"
                   id="cityInput"
-                  placeholder="enter your city name ...."
+                  placeholder="enter city name ......"
                 />
                 <div class="input-group-append">
                   <button
@@ -54,33 +58,52 @@
                 city name : <span id="cityName"></span>
               </h6>
               <h6 class="text-capitalize">
-                country : <span id="cityCountry"></span>
+                country : <span id="country"></span>
               </h6>
-              <img src="#" id="cityIcon" />
+
               <h6 class="text-capitalize">
                 temperature in celsius: <span id="cityTemp"></span>
-                <span class="m-3">
-                  <!-- 
-       https://www.iconfinder.com/icons/667368/celcius_clouds_farenheit_sunshine_temerature_thermometer_weather_icon
-       Creative Commons (Attribution 3.0 Unported);
-https://www.iconfinder.com/bluewolfski            -->
-                  <img src="img/temp.svg" alt="" />
-                </span>
               </h6>
               <h6 class="text-capitalize">
-                humidity : <span id="cityHumidity"></span
-                ><span class="m-3">
-                  <!-- 
-       https://www.iconfinder.com/icons/2682807/drop_high_humidity_percentage_precipitation_rain_weather_icon
-       Creative Commons (Attribution 3.0 Unported);
-https://www.iconfinder.com/laurareen            -->
-
-                  <img src="img/humidity.svg" alt="" />
-                </span>
+                humidity : <span id="cityHumidity"></span>
               </h6>
             </div>
           </div>
         </div>
+      </div>
+      <!-- footer -->
+      <div
+        class="text-center "
+        style="  position: relative;
+       "
+      >
+        <br /><br />
+        <a
+          style=" color:rgb(212, 202, 190); "
+          href="https://github.com/Tom5aly?tab=repositories"
+          target="_blank"
+          class="fab fa-github "
+        >
+        </a>
+        <a
+          style=" color:rgb(212, 202, 190);"
+          href="https://twitter.com/mr_tamer"
+          target="_blank"
+          class="fab fa-twitter "
+        >
+        </a>
+
+        <a
+          style=" color:rgb(212, 202, 190);"
+          href="https://www.linkedin.com/in/tamer-aly-b093b591/"
+          target="_blank"
+          class="fab fa-linkedin "
+        >
+        </a
+        ><br />
+        <small style="color:rgb(229, 229, 151);">
+          <b>&copy; Powered by Tamer Aly </b></small
+        >
       </div>
     </div>
 
